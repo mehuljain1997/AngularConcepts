@@ -1,0 +1,3 @@
+<p>parent works! child to parent:- {{childToParent}}</p>
+<app-child [parentToChild]="parentToChild" (childToParent)="callChildToParent($event)" (childToChild)="forParentToChild($event)" ></app-child>
+<app-child-second [childToChild]="childToChild"></app-child-second>
